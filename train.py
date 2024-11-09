@@ -67,7 +67,7 @@ def main(args):
     test_dataloader = data.DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
 
-    channel_mixing=True
+    channel_mixing=args.channel_mixing
     # VMamba here
     if "VSSM" in backbone_type:
         pretrained_model_name ="openmmlab/upernet-swin-tiny"
@@ -151,7 +151,8 @@ def args():
     parser.add_argument('--learning-rate', type=float, default=5e-5, help='learning rate')
     parser.add_argument('--epochs', type=int, default=100, help='number of epochs')
     parser.add_argument('--backbone-type', type=str, default='ResNet_Diff_50', choices=['ResNet_Diff_18','ResNet_Diff_50','ResNet_Diff_101','Swin_Diff_T', 'Swin_Diff_S', 'Swin_Diff_B', 'VSSM_T_ST_Diff', 'VSSM_S_ST_Diff', 'VSSM_B_ST_Diff'], help='Backbone Type (Modularized Encoder)')
-    parser.add_argument('--push-to-hub', type=bool, default=False, help='whether push to your huggingface repo, you need to login before using this feature.')
+    parser.add_argument('--channel-mixing', type=bool, default=False, help='whether using ChangeFFT.')
+    parser.add_argument('--push-to-hub', type=bool, default=False, help='whether pushing trained models to your huggingface repo, you need to login before using this feature.')
     args = parser.parse_args()
     return args
 
