@@ -33,7 +33,7 @@ Monitoring land changes triggered by mining activities is crucial for industrial
 
 ## Getting started
 ### Environment Preparation
-Create a conda environment for MaskCD
+Create a conda environment for MineNetCD
  ```console
 conda create -n minenetcd
 conda activate minenetcd
@@ -126,7 +126,7 @@ VMamba:
 
 ``ericyu/minenetcd-upernet-VSSM-S-ST-Diff-Pretrained-ChannelMixing-Dropout``
 
-Here is an example pf reproducing the results of MaskCD on CLCD results:
+Here is an example pf reproducing the results of MineNetCD on ``VSSM-S-ST-Diff-Pretrained-ChannelMixing-Dropout`` results:
 ```console
 accelerate launch test.py --model ericyu/minenetcd-upernet-VSSM-S-ST-Diff-Pretrained-ChannelMixing-Dropout
 ```
@@ -141,7 +141,7 @@ if accelerator.is_local_main_process:
 ___
 
 
-If you find MaskCD useful for your study, please kindly cite us:
+If you find MineNetCD useful for your study, please kindly cite us:
 ```
 @ARTICLE{10744421,
   author={Yu, Weikang and Zhang, Xiaokang and Gloaguen, Richard and Zhu, Xiao Xiang and Ghamisi, Pedram},
