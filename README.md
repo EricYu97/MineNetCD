@@ -12,6 +12,7 @@ Paper: [IEEE TGRS 2024](https://ieeexplore.ieee.org/document/10744421) (DOI: 10.
 
 
 ## Updates
+``Nov. 12, 2024`` We have also released the full version of MineNetCD dataset to HZDR RODARE database, you can find more information [here](https://rodare.hzdr.de/record/3251)
 ``Nov. 12, 2024`` The codes of UCD has been released in the UCD repo [here](https://github.com/AI4RS/UCD) 🤗
 ``Nov. 9, 2024`` Our paper has been accepted on IEEE TGRS, and the code is released.
 ## Abstract
