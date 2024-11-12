@@ -22,17 +22,17 @@ Monitoring land changes triggered by mining activities is crucial for industrial
 ## Overview
 * **MineNetCD** is a pioneering work introducing a mining change detection benchmark, including a global-scale mining change detection dataset, a ChangeFFT-based model, and a unified change detection framework.
 <p align="center">
-  <img src="figures/MineNetCDIntro.png" alt="architecture" width="30%">
+  <img src="figures/MineNetCDIntro.png" alt="architecture" width="80%">
 </p>
 
 * **MineNetCD Dataset** contains mining change detection samples collected from 100 sites globally.
 <p align="center">
-  <img src="figures/mcdpoints.png" alt="architecture" width="50%">
+  <img src="figures/mcdpoints.png" alt="architecture" width="80%">
 </p>
 
 * **MineNetCD Model** is built based on a Modularized Siamese Encoder, a ChangeFFT module, and a Change Decoder.
 <p align="center">
-  <img src="figures/ChangeFFT.png" alt="architecture" width="50%">
+  <img src="figures/ChangeFFT.png" alt="architecture" width="80%">
 </p>
 
 ## Getting started
